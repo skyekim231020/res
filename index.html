@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- swiper.css cdn으로 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- 사용자 정의 css 연결 -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- 파비콘 넣기 -->
+    <link rel="shortcut icon" href="img/logo/favicon.png">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- swiper.js cdn으로 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- gasp 플러그인 연결 -->
+    <script src="js/gsap.min.js"></script>
+    <!-- scrollTrigger.js 연결 -->
+    <!-- <script src="js/ScrollTrigger.min.js"></script> -->
+    <!-- 사용자 정의 js연결 -->
+    <script src="js/main.js"></script>
+
+
+
+
+    <title>제주국립박물관</title>
+    <!-- https://www.nhreits.com/ -->
+    <!-- https://jeju.museum.go.kr/ -->
+
+    <script>
+        $(function(){
+            $("span:contains('매주')").css({color:"red"});
+        });
+    </script>
+    <style></style>
+</head>
+<body>
+
+
+    <div class="wrap">
+
+
+
+
+        <header>
+            <div class="center">
+                <!-- 로고 -->
+                <div class="logo">
+                    <a href="index-personal.html">
+                        <img src="img/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <!-- 네비게이션 시작 -->
+                <nav>
+                    <ul>
+                        <li><a href="#">안내</a>
+                            <ul class="sub">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">관람/예약안내</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">발자취</a></li>
+                                <li><a href="#">조직안내</a></li>
+                                <li><a href="#">미션</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">전시</a>
+                            <ul class="sub">
+                                <li><a href="#">상설 전시</a></li>
+                                <li><a href="#">특별 전시</a></li>
+                                <li><a href="#">옥외 전시</a></li>
+                                <li><a href="#">국외전시</a></li>
+                                <li><a href="#">실감영상실</a></li>
+                                <li><a href="#">온라인전시관</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">교육/행사</a>
+                            <ul class="sub">
+                                <li><a href="#">교육프로그램</a>
+                                    <!-- <ul>
+                                        <li><a href="#">어린이/청소년</a></li>
+                                        <li><a href="#">학교연계</a></li>
+                                        <li><a href="#">성인</a></li>
+                                        <li><a href="#">문화소통</a></li>
+                                        <li><a href="#">특별전연계</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">문화행사</a>
+                                    <!-- <ul>
+                                        <li><a href="#">토요박물관산책</a></li>
+                                        <li><a href="#">설,추석명절행사</a></li>
+                                        <li><a href="#">어린이문화재그리기</a></li>
+                                        <li><a href="#">문화가 있는 날</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">교육자료실</a></li>
+                                <li><a href="#">온라인배움터</a></li>
+                                <li><a href="#">오디오클립</a></li>
+                                <li><a href="#">이달의행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">소장자료</a>
+                            <ul class="sub">
+                                <li><a href="#">학술연구</a></li>
+                                <li><a href="#">발간도서</a></li>
+                                <li><a href="#">소장품복제/열람</a>
+                                    <!-- <ul>
+                                        <li><a href="#">소장품복제안내</a></li>
+                                        <li><a href="#">소장품열람안내</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">보존처리</a>
+                                    <!-- <ul>
+                                        <li><a href="#">문화재</a></li>
+                                        <li><a href="#">철제</a></li>
+                                        <li><a href="#">복식</a></li>
+                                        <li><a href="#">회화</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">문화재기증</a>
+                                    <!-- <ul>
+                                        <li><a href="#">기증안내</a></li>
+                                        <li><a href="#">기증목록</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">수어동영상</a></li>
+                                <li><a href="#">소장품검색</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">참여</a>
+                            <ul class="sub">
+                                <li><a href="#">박물관소식</a>
+                                    <!-- <ul>
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">채용정보</a></li>
+                                        <li><a href="#">공시공고</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">자원봉사</a>
+                                    <!-- <ul>
+                                        <li><a href="#">학생봉사활동</a></li>
+                                        <li><a href="#">성인자원봉사</a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">정보공개</a>
+                                    <!-- <ul>
+                                        <li><a href="#">정보공개제도안내</a></li>
+                                        <li><a href="#">비공개 세부기준</a></li>
+                                        <li><a href="#">관련기준및서식</a></li>
+                                        <li><a href="#">정보공개수수료</a></li>
+                                        <li><a href="#">사전정보공표</a></li>
+                                        <li><a href="#">정보공개자료</a></li>
+                                        <li><a href="#">정보공개청구신청</a></li>
+                                        <li><a href="#">공공데이터개방</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="#">어린이박물관</a>
+                            <ul class="sub">
+                                <li><a href="#">어린이박물관 소개</a></li>
+                                <li><a href="#">어린이박물관 구석구석</a></li>
+                                <li><a href="#">관람안내/관림TIP</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                </nav>
+
+                <!-- 다국어지원,메뉴버튼 -->
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#" class= "menu_btn0">
+                            <!-- <img src="img/language.png" alt="다국어지원"> -->
+                            <svg aria-labelledby="languageIconTitle" color="#2329D6" class="lang" fill="none" height="100%" role="img" 
+                            stroke="#DE6B22" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" viewBox="0 0 24 24" 
+                            width="100%" xmlns="http://www.w3.org/2000/svg"><title id="languageIconTitle"/>
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,
+                            4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z" 
+                            stroke-linecap="round"/><path d="M2.5 9L21.5 9M2.5 15L21.5 15" stroke-linecap="round"/></svg>
+                        </a></li>
+                        <li><a href="#" class= "menu_btn">
+                            <!-- <img src="img/menu_icon.png" alt="메뉴버튼"> -->
+                            <svg enable-background="new 0 0 32 32" id="Editable-line" version="1.1" viewBox="0 0 32 32" 
+                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <line class="menu" fill="none" id="XMLID_103_" stroke="#DE6B22" stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="16" y2="16"/>
+                            <line class="menu" fill="none" id="XMLID_102_" stroke="#DE6B22" stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="25" y2="25"/>
+                            <line class="menu" fill="none" id="XMLID_101_" stroke="#DE6B22" stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-miterlimit="10" stroke-width="2" x1="7" x2="25" y1="7" y2="7"/></svg>
+                        </a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 서브메뉴 배경 -->
+            <div class="sub_bg"></div>
+            
+        </header>
+
+        <section class="sec1">
+            <!-- 메인슬라이드 - swiper plugin -->
+            <div class="swiper main">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide s1">
+                    <h1>임시 제목</h1>
+                    <p>임시 내용</p>
+                  </div>
+                  <div class="swiper-slide s2">
+                    <h1>임시 제목</h1>
+                    <p>임시 내용</p>
+                  </div>
+                  <div class="swiper-slide s3">
+                    <h1>임시 제목</h1>
+                    <p>임시 내용</p>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <section class="sec2 scrollSet">
+            <div class="center">
+                <div class="time ani firstAni">
+                    <h2>관람시간</h2>
+                    <p>관람안내 &nbsp;&nbsp; 09:00 ~ 18:00</p>
+                    <span>휴&nbsp;&nbsp;관&nbsp;&nbsp;일:&nbsp;&nbsp;매주 월요일, 매년 1월1일</span><br>
+                    <span>관람문의:&nbsp;&nbsp;064-720-8000</span><br>
+                    <button type="button"><a href="#">자세히 보기</a></button>
+                </div>
+                <div class="road ani secondAni">
+                    <h2>오시는 길</h2>
+                    <b>제주시외버스터미널에서<br>335, 336번 (소요시간 25분)</b><br>
+                    <span>관람안내: 064-720-8000</span><br>
+                    <span>팩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;스: 064-720-8050</span><br>
+                    <button type="button"><a href="#">자세히 보기</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="sec3 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>관람예약 & 요금</h2>
+                    <button type="button">
+                        <a href="#">자세히 보기</a>
+                    </button>
+                </div>
+                <!-- swiper slide (관람예약&요금) -->
+                <div class="swiper exhibit ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1"></div>
+                            <h3>관람요금</h3>
+                            <p><a href="#">요금정보 바로가기</a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2"></div>
+                            <h3>예약하기</h3>
+                            <p><a href="#">예약 하러 가기 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3"></div>
+                            <h3>단체관람 예약</h3>
+                            <p><a href="#">요금정보 바로가기</a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4"></div>
+                            <h3>휴관일 안내</h3>
+                            <p><a href="#">휴관일자 상세보기 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5"></div>
+                            <h3>대체 휴관일</h3>
+                            <p><a href="#">대체휴관일 안내 ></a></p>
+                        </div>
+                    </div><!--swiper-wrapper-->
+                    <!--pagination progress-->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper end-->
+                <!--prev버튼, next버튼-->
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+            </div>
+        </section>
+        <section class="sec4 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>박물관 서비스</h2>
+                    <button type="button">
+                        <a href="#">자세히 보기</a>
+                    </button>
+                </div>
+                <!-- swiper slide (관람예약&요금) -->
+                <div class="swiper notice ani secondAni">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="image img1"></div>
+                            <h3>VR서비스</h3>
+                            <p><a href="#">VR서비스 알아보기 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img2"></div>
+                            <h3>어린이 박물관</h3>
+                            <p><a href="#">꿈나무 박물관 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img3"></div>
+                            <h3>박물관 뉴스</h3>
+                            <p><a href="#">박물관 이모저모 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img4"></div>
+                            <h3>박물관 뉴스</h3>
+                            <p><a href="#">박물관 이모저모 ></a></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image img5"></div>
+                            <h3>박물관 뉴스</h3>
+                            <p><a href="#">박물관 이모저모 ></a></p>
+                        </div>
+                    </div><!--swiper-wrapper-->
+                    <!--pagination progress-->
+                    <div class="swiper-pagination"></div>
+                </div><!--swiper end-->
+                <!--prev버튼, next버튼-->
+                <div class="swiper-button-next ani"></div>
+                <div class="swiper-button-prev ani"></div>
+            </div>
+        </section>
+        <section class="sec5 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>숫자로 보는 제주국립 박물관</h2>
+                    <p>2023년도 제주국립박물관 고객만족도 조사 결과보고서입니다.</p>
+                    <div class="graph">
+                        <img src="img/core/chart.png" alt="graph">
+                    </div>
+                </div>
+                <div class="statis ani secondAni" id="count-area">
+                    <ul>
+                        <li class="ani ani1">
+                            <img src="img/icon_star.png" alt="star">
+                            <p>앱 서비스 만족도 조사</p>
+                            <div class="count">
+                                <span class="num" id="count-item1">1220</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                        <li class="ani ani4">
+                            <img src="img/icon_star.png" alt="star">
+                            <p>홈페이지 방문자 통계 </p>
+                            <div class="number">
+                                <span class="num" id="count-item2">2480</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                        <li class="ani ani7">
+                            <img src="img/icon_star.png" alt="star">
+                            <p>앱 서비스 사용자 통계</p>
+                            <div class="number">
+                                <span class="num" id="count-item3">8312</span>
+                                <b>명</b>
+                            </div>
+                        </li>
+                        <li class="ani ani10">
+                            <img src="img/icon_star.png" alt="star">
+                            <p>원고 모집 통계</p>
+                            <div class="number">
+                                <span class="num" id="count-item4">168</span>
+                                <b>권</b>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sec6 scrollSet">
+            <div class="center">
+                <div class="content ani firstAni">
+                    <h2>온라인 전시관</h2>
+                    <p>
+                        제주박물관 교육, 문화행사, 특별전시의<br>
+                        프로그램을 제공하고 있습니다.
+                    </p>
+                    <button type="button">
+                        <a href="#">자세히 보기</a>
+                        <!-- <div class="sec6_bg"></div> -->
+                    </button>
+                </div><!--content-->
+                <div class="online">
+                    <ul>
+                        <li class="on1 ani ani1">
+                            <a href="#">
+                                <span>[하반기/학교단체] 교과연계 <br>"박물관 탐구생활"</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on2 ani ani2">
+                            <a href="#">
+                                <span>[하반기/성인] <br>"국립제주박물관 아카데미"</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on3 ani ani3">
+                            <a href="#">
+                                <span>2023 보급형 교구상자 대여 <br>"상자를 열면?"</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on4 ani ani4">
+                            <a href="#">
+                                <span>동화 음악회 <br>"퍼플엘리" 공연</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on5 ani ani5">
+                            <a href="#">
+                                <span>문화가 있는 날 공연안내</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on6 ani ani6">
+                            <a href="#">
+                                <span>패밀리 클래식 콘서트</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on7 ani ani7">
+                            <a href="#">
+                                <span>가장 가까운 위로 <br>제주 동자석, 그리고 영월 나한상</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on8 ani ani8">
+                            <a href="#">
+                                <span>세한도 <br>다시 만난 추사秋史와 제주</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on9 ani ani9">
+                            <a href="#">
+                                <span>동행 <br>제주와 박물관</span>
+                                <div></div>
+                            </a>
+                        </li>
+                        <li class="on10 ani ani10"><a href="#"></a></li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+
+        <footer>
+            <div class="center">
+                <div class="footer1">
+                    <div class="f_logo">
+                        <img src="img/logo/logo_f0.png" alt="logo">
+                    </div>
+                    <!-- <div class="sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/icon_insta.png" alt="instagram">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_twitter.png" alt="twitter">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_facebook.png" alt="facebook">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_insta.png" alt="naver">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_youtube.png" alt="youtube">
+                            </a></li>
+                        </ul>
+                    </div> -->
+                    <div class="info">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">CCTV운영관리방침</a></li>
+                            <li><a href="#">고객민원</a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        주소.63284 제주특별자치도 제주시 일주동로-17<br>
+                        Tel. 064-720-8000 Fax. 064-720-8050
+                    </address>
+                    <p>&copy;Copyright(c) JEJU NATIONAL MUSEUM.All rights reserved.</p>
+                </div>
+                <div class="footer2">
+                    <div class="family_site">
+                        <a href="#">Family Site</a>
+                        <div class="family_list">
+                            <ul>
+                                <li><a href="#">어린이 박물관</a></li>
+                                <li><a href="#">교육플랫폼 모두</a></li>
+                                <li><a href="#">학예사 자격증</a></li>
+                                <li><a href="#">e뮤지엄</a></li>
+                                <li><a href="#">외규장각 의궤 원문</a></li>
+                                <li><a href="#">박물관 신문</a></li>
+                                <li><a href="#">문화상품점</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/icon_insta.png" alt="instagram">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_twitter.png" alt="twitter">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_facebook.png" alt="facebook">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_insta.png" alt="naver">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/icon_youtube.png" alt="youtube">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- top button -->
+    <div class="top">
+        <a href="#">
+            <img src="img/arrow_up_icon.png" alt="up arrow">
+        </a>
+    </div>
+
+
+
+
+
+
+    <script>
+    // sec5 영역의 count animation
+    // 카운팅 애니메이션 함수
+    function count(element, start, end, duration) {
+        let current = start;
+        const range = end - start;
+        const increment = range / (duration / 10);
+        const stepTime = 50; // 10ms 마다 증가하도록 설정
+
+        let timer = setInterval(function() {
+            current += increment;
+            if (current >= end) {
+                clearInterval(timer);
+                current = end;
+            }
+            element.textContent = formatNumber(current, end);
+        }, stepTime);
+    }
+
+    function formatNumber(number, end) {
+        if (Number.isInteger(end)) {
+            return number.toFixed(0).replace(/(\d)(?=(\d{3})+$)/g, '$1,');
+        } else {
+            return number.toFixed(1);
+        }
+    }
+
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', function() {
+        const countArea = document.getElementById('count-area');
+        const countAreaPosition = countArea.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight;
+
+        if (countAreaPosition < screenPosition / 2) { // 요소가 반이상 보였을 때 실행
+
+            const count1 = document.getElementById('count-item1');
+            count(count1, 0, 1220, 300);
+
+            const count2 = document.getElementById('count-item2');
+            count(count2, 0, 2480, 300);
+
+            const count3 = document.getElementById('count-item3');
+            count(count3, 0, 8312, 300);
+
+            const count4 = document.getElementById('count-item4');
+            count(count4, 0, 168, 300);
+
+            // 이벤트 리스너 삭제
+            window.removeEventListener('scroll', arguments.callee);
+        }
+    });
+
+
+    </script>
+    <script>
+        // resize() 메소드
+        (function($) {
+            $.AdjustZoom = function(options) {
+            var option = { zoomRatio : 100 };
+            $.extend(option, options);
+            // 브라우저 배율이 100% 가 아닌 경우 처리
+            if(screen.logicalXDPI != screen.deviceXDPI) {
+                try {
+                //alert(screen.availWidth+", "+screen.logicalXDPI+", "+screen.deviceXDPI);
+                        var ratio = screen.logicalXDPI / screen.deviceXDPI;
+                        var ratio_reverse = screen.deviceXDPI / screen.logicalXDPI;
+                        $('body').css('zoom', ( ratio * option.zoomRatio)+'%');
+                        $('body').width(screen.availWidth * ratio_reverse );
+            }catch (e) {
+                alert("브라우저 배율 보정 중 오류가 발생하였습니다. 창을 닫은 후 다시 열어 주시기 바랍니다.");
+            }
+        }
+    };
+    })(jQuery);
+    </script>
+</body>
+</html>
